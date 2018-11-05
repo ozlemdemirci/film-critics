@@ -1,0 +1,160 @@
+@font-face {
+    font-family: font1942;
+    src: url(../fonts/1942_report/1942.ttf);
+}
+
+@font-face {
+    font-family: courier;
+    src: url(../fonts/courier-prime/CourierPrime.ttf);
+}
+
+
+
+body {
+    color: #000;
+    background-color: yellow;
+}
+
+#header {
+    width: 800px;
+    height: 150px;
+    margin: 50px auto 0 auto;
+    font-family: font1942;
+    display: block;
+    z-index: 999;
+}
+
+.motto {
+    font-size: 100px;
+}
+
+.critics {
+    margin: 0 auto;
+    text-align: center;
+    font-family: courier;
+
+}
+
+.critics th {
+    padding: 10px;
+    font-size: 35px;
+    background-color:rgba(255,0,0,0.5);
+}
+
+.critics td {
+    padding: 13px;
+    background-color:rgba(255,0,0,0.3);
+}
+
+.critics a {
+    color: #000;
+    font-size: 25px;
+    text-decoration: none;
+    margin: 5px 0 5px 0;
+}
+
+input{
+    font-family: courier;
+    border-radius: 8px;
+    font-size: 30px;
+    padding: 20px 25px;
+    margin: 18px 0;
+}
+
+input[type=text]{
+    width: 100%;
+    border: 0;
+    border-radius: 8px;
+}
+
+input[type=submit]{
+    width: 100%;
+    border: 0;
+}
+
+table td{
+    color: #719e40;
+}
+
+.verticalText {
+    font-family: font1942;
+    /*margin: 20px auto;*/
+    /*padding: 10px;*/
+    /*background-color: rgba(47, 23, 255, 0.3);*/
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+
+    -ms-transform-origin: left top 0;
+    -moz-transform-origin: left top 0;
+    -webkit-transform-origin: left top 0;
+    transform-origin: left top 0;
+
+    background: #E23737;
+    color: #fff;
+    margin-left: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-transform: uppercase;
+    border: 1px solid #B52C2C;
+    box-shadow: 2px -2px 0px rgba(0, 0, 0, 0.1);
+
+    float: left;
+
+}
+
+.footer {
+    z-index: -1;
+    position: fixed;
+    top: 25%;
+    left: 0;
+    /*width: 250px;*/
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media only screen and (max-height: 600px) {
+    .footer {
+        display: none;
+    }
+
+    .motto {
+        font-size:17vh;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    .footer {
+        display: none;
+    }
+
+    .motto {
+        font-size:10vw;
+    }
+}
+
+.goback{
+    z-index: 1;
+    position: fixed;
+    top: 2%;
+    left: 0;
+    /*text-decoration: none;*/
+    /*color: #fff;*/
+    /*font-family: font1942;*/
+    /*font-size: 20px;*/
+    /*position: fixed;*/
+    /*top: 50px;*/
+    /*left: 0;*/
+    /*margin: 20px auto;*/
+    /*padding: 10px;*/
+}
+
+.goback a{
+    color: #fff;
+    text-decoration: none;
+}
